@@ -1,8 +1,8 @@
 # PERSONAL PORTFOLIO REPOSITORY - APP - BACK-END
 ## APP FOR PERSONAL PORTFOLIO REPOSITYORY - BACK-END CODE PART
 
-# Developed at Rocketseat´s GoStack 2020
-# Desafio 02: Conceitos do Node.js | Challenge 02: Node.js 101
+### Developed at Rocketseat´s GoStack 2020
+Desafio 02: Conceitos do Node.js | Challenge 02: Node.js 101
 
 ## How to install:
 Run com command `yarn install`<br />
