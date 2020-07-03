@@ -17,10 +17,10 @@ app.get("/repositories", (request, response) => {
 
 app.post("/repositories", (request, response) => {
   // This route should receive title, url and techs inside request body.
-  const {title, url, techs} = request.body;
+  const {id, title, url, techs} = request.body;
 
   const repository = {
-    id: uuid(),
+    id: typeof(id) == "undefined" ? uuid() : id,
     title,
     url,
     techs,
@@ -34,7 +34,7 @@ app.post("/repositories", (request, response) => {
 app.put("/repositories/:id", (request, response) => {
   // Change only title, url and/or techs:
   const { id } = request.params;
-  const {title, url, techs} = request.body;
+  const { title, url, techs } = request.body;
 
   // Repository id validation:
   if (repositories.findIndex(repository => repository.id === id) < 0) {
